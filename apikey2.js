@@ -79,7 +79,7 @@ const weatherDescriptions = {
 
 document.getElementById("button-73").addEventListener("click", function () {
     var query = document.getElementById('textInput').value;
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + query + '&aqi=yes&lang=en';
   
     fetch(url)
@@ -119,7 +119,7 @@ document.getElementById("button-73").addEventListener("click", function () {
   
   document.getElementById("button-74").addEventListener("click", function () {
     var query = document.getElementById('textInput1').value;
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + query + '&aqi=yes&lang=en';
   
     fetch(url)
@@ -161,7 +161,7 @@ document.getElementById("button-73").addEventListener("click", function () {
 
   document.getElementById("forecastButton").addEventListener("click", function () {
     var query = document.getElementById('textInput').value;
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + query + '&days=3';
   
     fetch(url)
@@ -189,7 +189,7 @@ document.getElementById("button-73").addEventListener("click", function () {
 
   document.getElementById("forecastButton1").addEventListener("click", function () {
     var query = document.getElementById('textInput1').value;
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + query + '&days=3';
   
     fetch(url)
@@ -255,7 +255,7 @@ forecastButton.addEventListener('click', function () {
 
 //CHATGPT API 
 document.getElementById("button-75").addEventListener("click", function () {
-    var apiKey = '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'; // Your ChatGPT API key
+    var apiKey = ''; // Your ChatGPT API key
     var firstCity = document.getElementById("textInput").value;
   
     // Call Weather API to get weather information for the first city
@@ -390,7 +390,7 @@ $( ".arrow-icon" ).click(function() {
 
 
 function fetchWeatherDataFuture(query){
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + query + '&days=3&aqi=yes&lang=en';
     return fetch(url)
       .then(response => response.json())
