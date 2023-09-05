@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Scrape</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather_style.css">
+    
+    <script src="https://kit.fontawesome.com/6ed99b02b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<!--Navbar section -->
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="/index.html" id="navbar__logo"><i class="fas fa-ghost"></i> Creative Portfolio</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/index.html" class="navbar__links"> Home </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/About.html" class="navbar__links"> About Me </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/Projects.html" class="navbar__links"> Projects </a>
+            </li>
+            <li class = "navbar__item">
+                <a href = "/Weather.html" class = "navbar__links">Weather </a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button"> Sign Up </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+<div class="weather_container">
+    <div class="left_field" style = "position: relative; left: -0px;">
+        <input type="text" id="textInput" placeholder="1. Current city">
+        <button id="button-73" role="button">Search</button>
+        <p>City: <span id="city"></span></p>
+        <p>Time: <span id = "local_time" ></span> </span></p>
+        <p>Timezone: <span id = "timezone"></span></p>
+        <i id="weatherIcon" class=""></i>
+        <p> <span id="degrees"></span> <span id="unit"></span></p>
+        <p>Feels like: <span id = "feels_like"></span> <span id="unitf"></span></p>
+        <p>Description: <span id = "description"></span></p>
+        <p>UV Index: <span id = "uv"></span></p>
+        <p>AQI Index: <span id = "aqi"></span></p>
+        <br><br>
+        <button id="forecastButton" class = "arrow-button" style = "position: relative; left: 50px;">Forecast</button>
+    
+        <div id="forecastBox" class="forecast-box" style = "position: relative; right: 20px; top:2px">
+            
+            <!-- Forecast information goes here -->
+          </div>
+        
+    </div>
+
+    <div class="right_field" style = "position: relative; left: 355px; bottom: -1px">
+        <input type="text" id="textInput1" placeholder="2. Destination city">
+        <button id="button-74" role="button">Search</button>
+        <p>City: <span id="city1"></span></p>
+        <p>Time: <span id = "local_time1" ></span> </span></p>
+        <p>Timezone: <span id = "timezone1"></span></p>
+        <i id="weatherIcon1" class=""></i>
+        <p> <span id="degrees1"></span> <span id="unit1"></span></p>
+        <p>Feels like: <span id = "feels_like1"></span> <span id="unitf1"></span></p>
+        <p>Description: <span id = "description1"></span></p>
+        <p>UV Index: <span id = "uv1"></span></p>
+        <p>AQI Index: <span id = "aqi1"></span></p>
+        <br><br>
+        <button id="forecastButton1" class = "arrow-button" style = "position: relative; left: 50px;">Forecast</button>
+        <div id="forecastBox1" class="forecast-box" style = "position: relative; right: 20px; top:2px">
+            
+            <!-- Forecast information goes here -->
+        </div>
+    </div>
+
+    <div class="middle_field" style = "position: relative; left: -300px;">
+        <img src="images/logo1.png" alt="Profile" style ="width: 350px;border: 5px solid #1c1104a5; padding: 3px; margin: -20px; border-radius: 8px;">
+        <input type = "text" id = "in_advance" placeholder = "3. How many days from now is the trip?">
+        <p>(Max:3 days in advance) </p>
+        <button id = "button-75" role = "button">Load Suggestions</button>
+        <p><span id="Suggestions"></span></p>
+    </div>
+</div>
+
+
+
+    <script src = "apikey2.js" ></script>
+</body>
+</html>
+
+
+    
