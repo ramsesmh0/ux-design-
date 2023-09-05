@@ -374,7 +374,7 @@ function fetchChatGPTResponse(apiKey, first_city, temperature, description, uvIn
 
 //API weather fetcher
 function fetchWeatherData(query) {
-    var apiKey = '1182cdc066324cd080403024231607'; // Replace with your actual WeatherAPI key
+    var apiKey = ''; // Replace with your actual WeatherAPI key
     var url = 'https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + query + '&aqi=yes&lang=en';
   
     return fetch(url)
