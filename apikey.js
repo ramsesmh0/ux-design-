@@ -1,6 +1,6 @@
 document.getElementById("button-56").addEventListener("click", function () {
     var query = document.getElementById('textInput').value;
-    var apiKey = '61e111838a4f47be88a126adb2ecca21'; // Replace with your actual Weatherbit API key
+    var apiKey = ''; // Replace with your actual Weatherbit API key
     var url = 'https://api.weatherbit.io/v2.0/current?city=' + query + '&key=' + apiKey + '&units=I';
   
 
@@ -30,7 +30,7 @@ document.getElementById("button-56").addEventListener("click", function () {
 
 document.getElementById("button-57").addEventListener("click", function () {
     var query = document.getElementById('textInput1').value;
-    var apiKey = '61e111838a4f47be88a126adb2ecca21'; // Replace with your actual Weatherbit API key
+    var apiKey = ''; // Replace with your actual Weatherbit API key
     var url = 'https://api.weatherbit.io/v2.0/current?city=' + query + '&key=' + apiKey + '&units=I';
   
 
